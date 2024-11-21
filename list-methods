@@ -1,0 +1,37 @@
+sayilar = [4,6,8,2,56,78,90]
+isimler = ['ahmet','canan','zeynep','gökhan','ali','canan']
+
+sonuc1 = min(sayilar) #sayıların minimum değerini gösterir
+sonuc2 = min(isimler) #en düşük indekse sahip harfle başlayan kelimeyi gösterir
+sonuc3 = max(sayilar) #sayıların maximum değerini gösterir
+sonuc4 = max(isimler) #en yüksek indekse sahip harfle başlayan kelimeyi gösterir
+
+#Ekleme
+sayilar.append(12)
+isimler.append('Çınar')
+
+sayilar.insert(0, 100)
+sayilar.insert(-1, 100)
+sayilar.insert(-3, 100)
+# sayilar.insert(len(sayilar), 100) sonuna ekler
+
+#Silme
+sayilar.pop()
+sayilar.pop(0)
+# isimler.remove('canan')
+
+#Sıralama
+# sayilar.sort() #küçükten büyüğe doğru sıralar
+# isimler.sort()
+# sayilar.reverse() #tersten sıralar
+
+
+
+#Arama
+sonuc= sayilar.index(4)
+sonuc= isimler.index('canan')
+
+sonuc = sayilar.count(4)
+sonuc = isimler.count('canan')
+
+print(sayilar)
