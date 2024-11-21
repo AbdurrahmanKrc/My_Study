@@ -1,0 +1,27 @@
+# Dictionary Metodları
+
+yemekTarifi = {
+    "yemekAdi": "Musakka",
+    "yemekTarifi": "tarif açıklaması",
+    "resim": "1.jpg"
+}
+
+# access items
+sonuc1 = yemekTarifi["yemekAdi"]
+sonuc2 = yemekTarifi.get("yemekAdi")
+sonuc3 = yemekTarifi.keys()
+sonuc4 = yemekTarifi.values()
+sonuc5 = yemekTarifi.items()
+
+# update items
+# yemekTarifi["yemekAdi"] = "Mantı"
+# yemekTarifi.update({"yemekAdi":"Mantı"})
+# yemekTarifi.update({"yemekAdi2":"Mantı"})
+
+# delete items
+# yemekTarifi.pop("yemekAdi")
+# yemekTarifi.popitem()
+# yemekTarifi.clear()
+
+sonuc = yemekTarifi
+print(sonuc)
