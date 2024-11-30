@@ -1,0 +1,37 @@
+# 1- Yaşı 18' den büyük ya da veli izni varsa bir işte çalışabilir durumunu kontrol ediniz.
+
+yas = 17
+veli_izni = True
+sonuc = (veli_izni) or (17 >= 18)
+
+# 2- Ders notu 100-50 arasındaysa geçti değilse kalsın bilgisini yazdırınız
+
+dersNotu = int(input("Ders Notu: "))
+sonuc = 100 >= dersNotu >= 50
+print(sonuc)
+
+# 3- Not ortalaması en az 70 puan ve zayıfı yoksa teşekkür belgesi alabilme durumunu kontrol ediniz
+
+notOrtalaması = int(input("Not Ortalaması: "))
+zayifDurumu = not(False)
+sonuc = zayifDurumu and (notOrtalaması >= 70)
+print(sonuc)
+
+# 4- İşe girmek için en az önlisans ya da lisans mezunu olma durumunu kontrol ediniz. Sigara Kullanmama Koşulu.
+
+eğitim = "lisans"
+sigara = True
+sonuc = (eğitim == "lisans" or eğitim == "önlisans") and (not(sigara))
+print(sonuc)
+
+# 5- uygulamaya giriş kontrolünü "username yada email" ve "parola" için yapalım.
+
+email = "info@gmail.com"
+username = "AstroApex"
+password = 121997
+
+girilenBilgi = input("Email ya da Kullanıcı Adı: ")
+sifre = int(input("Şifre: "))
+
+sonuc = ((girilenBilgi == email) or (girilenBilgi == username)) and (sifre == password)
+print(sonuc)
